@@ -39,11 +39,14 @@ class Technicals:
         self.watchlist = tickers
         self.datafile = data_file
         
+    # Switch to a rolling calculation to allow for graphing for all MA
     def ma_50(self, user_choice):
         """calculate the 50 day moving average"""
         sigma = np.array(self.datafile[self.watchlist.index(user_choice)]['Close'])
 
         moving_average = sigma[:50].sum() / 50
+        #self.datafile['ma50'] 
+        #self.datafile['Close'].rolling(window=50).mean()
         return moving_average
     
     def ma_100(self, user_choice):
