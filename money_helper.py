@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import alpaca_trade_api as tradeapi
 
 # For when I figure out how to add options 
 class Greeks:
@@ -95,7 +96,7 @@ class Technicals:
     def volume(self, user_choice):
         """Retrieve the volume from the data frame"""
         
-        vol = np.array(self.datafile[self.watchlist.index(user_choice)]['Close'])
+        vol = np.array(self.datafile[self.watchlist.index(user_choice)]['Volume'])
     
         return vol
-        
+
