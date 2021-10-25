@@ -9,8 +9,8 @@ import alpaca_trade_api as tradeapi
 # Imports the technical indicators from helper file
 from money_helper import Technicals
 
-#API_KEY = 'PKJHZE9C0O6SSUC3I3LR'
-#API_SECRET = 'Iapyj1gABGOEyFuyqgraK6kQpbRABIFfD7pU5OJX'
+#API_KEY = ''
+#API_SECRET = ''
 #APCA_API_BASE_URL = "https://paper-api.alpaca.markets"
 
 ## Establishes connection to alpaca API
